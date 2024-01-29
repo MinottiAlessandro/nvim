@@ -3,3 +3,4 @@
 2. install plugins dependencies:
     - nerdfonts
     - sudo apt install ripgrep
+    - go (programming lang)
