@@ -1,0 +1,5 @@
+1. install build and remove latest version of nvim
+    1.5 set language to en_US
+2. install plugins dependencies:
+    - nerdfonts
+    - sudo apt install ripgrep
