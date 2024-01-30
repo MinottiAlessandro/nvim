@@ -5,4 +5,3 @@
     - sudo apt install ripgrep
     - go (programming lang)
     - tmux
-    - undo-tree
