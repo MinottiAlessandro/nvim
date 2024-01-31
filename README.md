@@ -18,6 +18,7 @@ When in the Fugitive UI you can:
     - 'cc' to create a commit (after inserting the commit message :wq to save and commit)
     - 'cz' to create a stash and include all staged/unstaged changes
     - 'cza' to apply ta last stash
+    - 'cm' then specify the branch to merge into  the current branch
 
 ## File search & navigation
 | Keybinding | Description |

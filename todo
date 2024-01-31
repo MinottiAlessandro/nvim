@@ -16,9 +16,9 @@ Versioning capabilities:
     - Undo commit - OK
     - Stash - OK
     - Apply stash - OK
+    - Merge - OK
 
     - Delete branch
-    - Merge - OK
 
 fix tmux
 
