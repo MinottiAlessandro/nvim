@@ -12,7 +12,7 @@
 
 When in the Fugitive UI you can:
     - 's' to stage a change
-    - 'X' to discard change
+    - 'X' to discard change or commit
     - 'u' to unstage
     - 'U' to unsage all
     - 'cc' to create a commit (after inserting the commit message :wq to save and commit)

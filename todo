@@ -13,8 +13,9 @@ Versioning capabilities:
     - Push/ Pull - OK
     - Create branch from - OK
     - Undo changes - OK
+    - Undo commit - OK
 
-    - Undo commit
+    - Delete branch
     - Stash
     - Apply stash
 
