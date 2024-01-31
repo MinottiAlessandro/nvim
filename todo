@@ -2,24 +2,6 @@ List all the dependencies and setting up an installer
 
 Add lsp capabilities, autocompletion etc..
 
-Versioning capabilities:
-    - Create a branch - OK
-    - List branches - OK
-    - Checkout - OK
-    - List commit - OK
-    - List file changes - OK
-    - List not staged changes - OK
-    - Commit - OK
-    - Push/ Pull - OK
-    - Create branch from - OK
-    - Undo changes - OK
-    - Undo commit - OK
-    - Stash - OK
-    - Apply stash - OK
-    - Merge - OK
-
-    - Delete branch
-
 fix tmux
 
 add harpoon
