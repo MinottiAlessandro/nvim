@@ -11,9 +11,9 @@ Versioning capabilities:
     - List not staged changes - OK
     - Commit - OK
     - Push/ Pull - OK
+    - Create branch from - OK
+    - Undo changes - OK
 
-    - Create branch from
-    - Undo changes
     - Undo commit
     - Stash
     - Apply stash
