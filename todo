@@ -1,6 +1,22 @@
 List all the dependencies and setting up an installer
+
 Add lsp capabilities, autocompletion etc..
-Versioning capabilities
+
+Versioning capabilities:
+    - Create a branch - OK
+    - Create branch from - 
+    - List branches - OK
+    - Checkout - OK
+    - List commit - OK
+    - List file changes - OK
+    - List not staged changes - OK
+    - Undo changes
+    - Commit
+    - Undo commit
+    - Push
+    - Stash
+    - Apply stash
+    - Retrieve changes
+
 fix tmux
-add icons
-...
+

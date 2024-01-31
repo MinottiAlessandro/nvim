@@ -7,16 +7,9 @@ vim.api.nvim_set_keymap('n', '\'', ':vertical resize +5<CR>', { noremap = true, 
 vim.api.nvim_set_keymap('n', '"', ':vertical resize -5<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
 
--- Pane and Window Navigation
--- vim.keymap.set("<C-h>", "<C-w>h", "n") -- Navigate Left
--- vim.keymap.set("<C-j>", "<C-w>j", "n") -- Navigate Down
--- vim.keymap.set("<C-k>", "<C-w>k", "n") -- Navigate Up
--- vim.keymap.set("<C-l>", "<C-w>l", "n") -- Navigate Right
--- vim.keymap.set("<C-h>", "wincmd h", "t") -- Navigate Left
--- vim.keymap.set("<C-j>", "wincmd j", "t") -- Navigate Down
--- vim.keymap.set("<C-k>", "wincmd k", "t") -- Navigate Up
--- vim.keymap.set("<C-l>", "wincmd l", "t") -- Navigate Right
--- vim.keymap.set("<C-h>", "TmuxNavigateLeft", "n") -- Navigate Left
--- vim.keymap.set("<C-j>", "TmuxNavigateDown", "n") -- Navigate Down
--- vim.keymap.set("<C-k>", "TmuxNavigateUp", "n") -- Navigate Up
--- vim.keymap.set("<C-l>", "TmuxNavigateRight", "n") -- Navigate Right
+-- Git --
+vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gnb', ':Git branch<space>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<leader>gg', ':Git<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>glc', ':Telescope git_commits<CR>', { noremap = true, silent = true })
+
