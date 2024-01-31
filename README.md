@@ -42,3 +42,4 @@ When in the Fugitive UI you can:
 | \<leader\>o | Open a new empty buffer |
 | ' | Enlarge pane |
 | " | Restrict pane |
+| ctrl h,j,k,l | move the focus on another pane |
