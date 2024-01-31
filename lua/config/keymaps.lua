@@ -12,4 +12,6 @@ vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { nore
 vim.api.nvim_set_keymap('n', '<leader>gnb', ':Git branch<space>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<leader>gg', ':Git<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>glc', ':Telescope git_commits<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gp', ':Git push<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gr', ':Git pull<CR>', { noremap = true, silent = true })
 
