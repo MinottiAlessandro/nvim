@@ -4,19 +4,19 @@ Add lsp capabilities, autocompletion etc..
 
 Versioning capabilities:
     - Create a branch - OK
-    - Create branch from - 
     - List branches - OK
     - Checkout - OK
     - List commit - OK
     - List file changes - OK
     - List not staged changes - OK
+    - Commit - OK
+    - Push/ Pull - OK
+
+    - Create branch from
     - Undo changes
-    - Commit
     - Undo commit
-    - Push
     - Stash
     - Apply stash
-    - Retrieve changes
 
 fix tmux
 
