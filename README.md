@@ -16,6 +16,8 @@ When in the Fugitive UI you can:
     - 'u' to unstage
     - 'U' to unsage all
     - 'cc' to create a commit (after inserting the commit message :wq to save and commit)
+    - 'cz' to create a stash and include all staged/unstaged changes
+    - 'cza' to apply ta last stash
 
 ## File search & navigation
 | Keybinding | Description |

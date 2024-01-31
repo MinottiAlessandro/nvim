@@ -14,10 +14,12 @@ Versioning capabilities:
     - Create branch from - OK
     - Undo changes - OK
     - Undo commit - OK
+    - Stash - OK
+    - Apply stash - OK
 
     - Delete branch
-    - Stash
-    - Apply stash
 
 fix tmux
+
+add harpoon
 
