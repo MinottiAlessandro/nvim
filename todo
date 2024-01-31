@@ -18,6 +18,7 @@ Versioning capabilities:
     - Apply stash - OK
 
     - Delete branch
+    - Merge
 
 fix tmux
 
