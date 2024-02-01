@@ -20,3 +20,58 @@ vim.api.nvim_set_keymap('n', '<C-l>', '<cmd> TmuxNavigateRight<CR>', { noremap =
 vim.api.nvim_set_keymap('n', '<C-j>', '<cmd> TmuxNavigateDown<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<cmd> TmuxNavigateUp<CR>', { noremap = true, silent = true })
 
+-- Harpoon --
+local harpoon = require('harpoon')
+harpoon:setup({})
+
+vim.keymap.set("n", "<leader>a", function() 
+    harpoon:list():append()
+end)
+
+vim.keymap.set("n", "<leader>1", function()
+    harpoon:list():select(1)
+end)
+
+vim.keymap.set("n", "<leader>2", function()
+    harpoon:list():select(2)
+end)
+
+vim.keymap.set("n", "<leader>3", function()
+    harpoon:list():select(3)
+end)
+
+vim.keymap.set("n", "<leader>4", function()
+    harpoon:list():select(4)
+end)
+
+vim.keymap.set("n", "<leader>d", function()
+    local index = tonumber(vim.fn.input("Remove buffer no.: "))
+    harpoon:list():removeAt(index) 
+end)
+
+vim.keymap.set("n", "<leader>r", function()
+    harpoon:list():clear()
+end)
+
+-- basic telescope configuration
+local conf = require("telescope.config").values
+local function toggle_telescope(harpoon_files)
+    local file_paths = {}
+    for _, item in ipairs(harpoon_files.items) do
+        table.insert(file_paths, item.value)
+    end
+
+    require("telescope.pickers").new({}, {
+        prompt_title = "Harpoon",
+        finder = require("telescope.finders").new_table({
+            results = file_paths,
+        }),
+        previewer = conf.file_previewer({}),
+        sorter = conf.generic_sorter({}),
+    }):find()
+end
+
+vim.keymap.set("n", "<C-e>", function()
+    toggle_telescope(harpoon:list())
+end,{ desc = "Open harpoon window" })
+
