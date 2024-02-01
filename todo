@@ -2,4 +2,5 @@ List all the dependencies and setting up an installer
 
 Add lsp capabilities, autocompletion etc..
 
-add harpoon
+Create a plugin that manage tmux session, every time I open a project it search for the corresponding session an attach to it, otherwise it create a new session, It should not be necessary to be in a tmux session, just launch nvim .
+
