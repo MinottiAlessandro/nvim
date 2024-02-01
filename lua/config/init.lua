@@ -32,9 +32,10 @@ local opts = {
 	}
 }
 
+require("config.globals")
+
 require("lazy").setup("plugins", opts)
 
-require("config.globals")
 require("config.options")
 require("config.keymaps")
 
