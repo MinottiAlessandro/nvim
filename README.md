@@ -29,10 +29,10 @@ When in the Fugitive UI you can:
 | \<leader\>e | Open folder manager |
 | \<leader\>u | Open undotree |
 | ctrl e | Open Harpoon UI |
-| <leader>a | Append a file to Harpoon |
-| <leader>1,2,3,4 | Pick a buffer from Harpoon |
-| <leader>r | Clear every buffer in Harpoon |
-| <leader>d {insert number} | Delete a specific buffer from Harpoon |
+| \<leader\>a | Append a file to Harpoon |
+| \<leader\>1,2,3,4 | Pick a buffer from Harpoon |
+| \<leader\>r | Clear every buffer in Harpoon |
+| \<leader\>d {insert number} | Delete a specific buffer from Harpoon |
 
 ## Text manipulation
 | Keybinding | Description |
