@@ -13,6 +13,7 @@ vim.api.nvim_set_keymap('n', '<leader>gg', ':Git<CR>', { noremap = true, silent 
 vim.api.nvim_set_keymap('n', '<leader>gc', ':Telescope git_commits<CR>', { noremap = true, silent = true, desc = "List all commits" })
 vim.api.nvim_set_keymap('n', '<leader>gp', ':Git push<CR>', { noremap = true, silent = true, desc = "Git push" })
 vim.api.nvim_set_keymap('n', '<leader>gr', ':Git pull<CR>', { noremap = true, silent = true, desc = "Git pull" })
+vim.api.nvim_set_keymap('n', '<leader>gi', ':Git init<CR>', { noremap = true, silent = true, desc = "Git init" })
 
 -- tmux --
 vim.api.nvim_set_keymap('n', '<C-h>', '<cmd> TmuxNavigateLeft<CR>', { noremap = true, silent = true, desc = "Navigate left" })

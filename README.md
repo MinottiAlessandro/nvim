@@ -9,6 +9,7 @@
 | \<leader\>gnb | Create a new branch from the current branch |
 | \<leader\>gp | Git push |
 | \<leader\>gr | Git pull (retrieve) |
+| \<leader\>gi | Git init |
 
 When in the Fugitive UI you can:
     - 's' to stage a change
