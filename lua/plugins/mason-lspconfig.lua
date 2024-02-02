@@ -1,7 +1,15 @@
 local opts = {
     enusre_installed = {
         "efm",
-        "lua_ls"
+		"bashls",
+		"tsserver",
+		"solidity",
+		"tailwindcss",
+		"pyright",
+		"lua_ls",
+		"emmet_ls",
+		"jsonls",
+		"clangd",
     },
     automatic_installation = true,
 }
