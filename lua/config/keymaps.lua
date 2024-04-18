@@ -25,7 +25,7 @@ vim.api.nvim_set_keymap('n', '<C-k>', '<cmd> TmuxNavigateUp<CR>', { noremap = tr
 local harpoon = require('harpoon')
 harpoon:setup({})
 
-vim.keymap.set("n", "<leader>a", function() 
+vim.keymap.set("n", "<leader>a", function()
     harpoon:list():append()
 end, {desc = "Add buffer to Harpoon"})
 
@@ -47,7 +47,7 @@ end, {desc = "Harpoon 4th buffer"})
 
 vim.keymap.set("n", "<leader>d", function()
     local index = tonumber(vim.fn.input("Remove buffer no.: "))
-    harpoon:list():removeAt(index) 
+    harpoon:list():removeAt(index)
 end, {desc = "Remove {i} from Harpoon"})
 
 vim.keymap.set("n", "<leader>r", function()
