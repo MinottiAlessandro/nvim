@@ -5,6 +5,7 @@ vim.api.nvim_set_keymap('n', '<leader>o', ':vsp | enew<CR>', { noremap = true, s
 vim.api.nvim_set_keymap('n', '\'', ':vertical resize +5<CR>', { noremap = true, silent = true, desc = "Enlarge the current pane" })
 vim.api.nvim_set_keymap('n', '"', ':vertical resize -5<CR>', { noremap = true, silent = true, desc = "Reduce the current pane" })
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, {desc = "Open UndoTree"})
+vim.api.nvim_set_keymap('n', '<leader>t', [[:%s/\s\+$//e<CR>:noh<CR>]], {desc = "Trail spaces"})
 
 -- Git --
 vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { noremap = true, silent = true, desc = "List all branches" })

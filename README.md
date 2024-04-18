@@ -41,6 +41,7 @@ When in the Fugitive UI you can:
 | > | Indent code (right) |
 | < | Indent code (left)|
 | gcc | Comment the current selection |
+| \<leader\>t | Trail spaces |
 
 ## Panes:
 | Keybinding | Description |
