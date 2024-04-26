@@ -27,7 +27,7 @@ local harpoon = require('harpoon')
 harpoon:setup({})
 
 vim.keymap.set("n", "<leader>a", function()
-    harpoon:list():append()
+    harpoon:list():add()
 end, {desc = "Add buffer to Harpoon"})
 
 vim.keymap.set("n", "<leader>1", function()
