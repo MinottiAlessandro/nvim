@@ -34,6 +34,7 @@ When in the Fugitive UI you can:
 | \<leader\>1,2,3,4 | Pick a buffer from Harpoon |
 | \<leader\>r | Clear every buffer in Harpoon |
 | \<leader\>d {insert number} | Delete a specific buffer from Harpoon |
+| \<leader\>l | Open Lazy |
 
 ## Text manipulation
 | Keybinding | Description |
