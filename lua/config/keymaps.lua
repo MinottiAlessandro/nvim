@@ -49,9 +49,9 @@ vim.keymap.set('n', '<leader>4', function()
 end, {desc = 'Harpoon 4th buffer'})
 
 vim.keymap.set('n', '<leader>d', function()
-    local index = tonumber(vim.fn.input('Remove buffer no.: '))
-    harpoon:list():removeAt(index)
-end, {desc = 'Remove {i} from Harpoon'})
+    local buffer_number = tonumber(vim.fn.input('Remove buffer n: '))
+    harpoon:list():remove_at(buffer_number)
+end, {desc = 'Harpoon remove {i} buffer'})
 
 vim.keymap.set('n', '<leader>r', function()
     harpoon:list():clear()
