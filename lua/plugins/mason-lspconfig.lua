@@ -10,6 +10,7 @@ local opts = {
 		"emmet_ls",
 		"jsonls",
 		"clangd",
+        "gopls",
     },
     automatic_installation = true,
 }
