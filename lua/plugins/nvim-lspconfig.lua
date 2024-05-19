@@ -118,6 +118,25 @@ local config = function()
 		},
 	})
 
+    -- python
+	lspconfig.gopls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		settings = {
+			pyright = {
+				disableOrganizeImports = false,
+				analysis = {
+					useLibraryCodeForTypes = true,
+					autoSearchPaths = true,
+					diagnosticMode = "workspace",
+					autoImportCompletions = true,
+				},
+			},
+		},
+	})
+
+
+
 	local luacheck = require("efmls-configs.linters.luacheck")
 	local stylua = require("efmls-configs.formatters.stylua")
 	local flake8 = require("efmls-configs.linters.flake8")
