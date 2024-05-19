@@ -7,6 +7,7 @@ vim.api.nvim_set_keymap('n', '\"', ':vertical resize -5<CR>', { noremap = true, 
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, {desc = 'Open UndoTree'})
 vim.api.nvim_set_keymap('n', '<leader>t', [[:%s/\s\+$//e<CR>:noh<CR>]], {desc = 'Trail spaces'})
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', {desc = 'Open Lazy'})
+vim.keymap.set('n', '<leader>m', ':Mason<CR>', {desc = 'Open Mason'})
 
 -- Git --
 vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { noremap = true, silent = true, desc = 'List all branches' })

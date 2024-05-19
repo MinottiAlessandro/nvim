@@ -35,6 +35,7 @@ When in the Fugitive UI you can:
 | \<leader\>r | Clear every buffer in Harpoon |
 | \<leader\>d {insert number} | Delete a specific buffer from Harpoon |
 | \<leader\>l | Open Lazy |
+| \<leader\>m | Open Mason |
 
 ## Text manipulation
 | Keybinding | Description |
