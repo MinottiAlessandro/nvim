@@ -2,7 +2,7 @@ local opts = {
     enusre_installed = {
         "efm",
 		"bashls",
-		"tsserver",
+		"ts_ls",
 		"solidity",
 		"tailwindcss",
 		"pyright",

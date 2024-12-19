@@ -58,7 +58,7 @@ local config = function()
 	})
 
 	-- typescript
-	lspconfig.tsserver.setup({
+	lspconfig.ts_ls.setup({
 		on_attach = on_attach,
 		capabilities = capabilities,
 		filetypes = {
@@ -118,8 +118,25 @@ local config = function()
 		},
 	})
 
-    -- python
+    -- go
 	lspconfig.gopls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		settings = {
+			pyright = {
+				disableOrganizeImports = false,
+				analysis = {
+					useLibraryCodeForTypes = true,
+					autoSearchPaths = true,
+					diagnosticMode = "workspace",
+					autoImportCompletions = true,
+				},
+			},
+		},
+	})
+
+    -- rust
+	lspconfig.rust_analyzer.setup({
 		capabilities = capabilities,
 		on_attach = on_attach,
 		settings = {
