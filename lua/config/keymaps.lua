@@ -1,4 +1,4 @@
-vim.keymap.set('n', '<leader>e', vim.cmd.Ex, {desc = 'Open file explorer'})
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true, desc = 'Open file explorer'})
 vim.keymap.set('v', '<', '<gv', {desc = 'Indent left'})
 vim.keymap.set('v', '>', '>gv', {desc = 'Indent right'})
 vim.api.nvim_set_keymap('n', '<leader>o', ':vsp | enew<CR>', { noremap = true, silent = true, desc = 'Split screen w new buffer' })

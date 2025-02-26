@@ -25,6 +25,7 @@
 | Keybinding | Description |
 | ---------- | ----------- |
 | K | Show documentation for whats under the cursor |
+| \<leader\>e | Open/close file explorer |
 
 ## Text manipulation
 | Keybinding | Description |
