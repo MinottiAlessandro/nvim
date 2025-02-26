@@ -9,15 +9,6 @@ vim.api.nvim_set_keymap('n', '<leader>t', [[:%s/\s\+$//e<CR>:noh<CR>]], {desc = 
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', {desc = 'Open Lazy'})
 vim.keymap.set('n', '<leader>m', ':Mason<CR>', {desc = 'Open Mason'})
 
--- Git --
-vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { noremap = true, silent = true, desc = 'List all branches' })
-vim.api.nvim_set_keymap('n', '<leader>gnb', ':Git branch<space>', {noremap = true, desc = 'Create a new branch from the current branch'})
-vim.api.nvim_set_keymap('n', '<leader>gg', ':Git<CR>', { noremap = true, silent = true, desc = 'Open Fugitive UI' })
-vim.api.nvim_set_keymap('n', '<leader>gc', ':Telescope git_commits<CR>', { noremap = true, silent = true, desc = 'List all commits' })
-vim.api.nvim_set_keymap('n', '<leader>gp', ':Git push<CR>', { noremap = true, silent = true, desc = 'Git push' })
-vim.api.nvim_set_keymap('n', '<leader>gr', ':Git pull<CR>', { noremap = true, silent = true, desc = 'Git pull' })
-vim.api.nvim_set_keymap('n', '<leader>gi', ':Git init<CR>', { noremap = true, silent = true, desc = 'Git init' })
-
 -- tmux --
 vim.api.nvim_set_keymap('n', '<C-h>', '<cmd> TmuxNavigateLeft<CR>', { noremap = true, silent = true, desc = 'Navigate left' })
 vim.api.nvim_set_keymap('n', '<C-l>', '<cmd> TmuxNavigateRight<CR>', { noremap = true, silent = true, desc = 'Navigate Right' })

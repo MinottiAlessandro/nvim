@@ -3,23 +3,7 @@
 ## Git
 | Keybinding | Description |
 | ---------- | ----------- |
-| \<leader\>gg | Opens Fugitives UI, here you can use the main git functionality|
-| \<leader\>gc | List all the commits |
-| \<leader\>gb | List all branches (you can also switch branch pressing enter on a specific branch) |
-| \<leader\>gnb | Create a new branch from the current branch |
-| \<leader\>gp | Git push |
-| \<leader\>gr | Git pull (retrieve) |
-| \<leader\>gi | Git init |
-
-When in the Fugitive UI you can:
-    - 's' to stage a change
-    - 'X' to discard change or commit
-    - 'u' to unstage
-    - 'U' to unsage all
-    - 'cc' to create a commit (after inserting the commit message :wq to save and commit)
-    - 'cz' to create a stash and include all staged/unstaged changes
-    - 'cza' to apply ta last stash
-    - 'cm' then specify the branch to merge into  the current branch
+| \<leader\>gg | Opens LazyGit UI, here you can use the main git functionality|
 
 ## File search & navigation
 | Keybinding | Description |
