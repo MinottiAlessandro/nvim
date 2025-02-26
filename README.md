@@ -25,7 +25,18 @@
 | Keybinding | Description |
 | ---------- | ----------- |
 | K | Show documentation for whats under the cursor |
+
+## File explorer
+| Keybinding | Description |
+| ---------- | ----------- |
 | \<leader\>e | Open/close file explorer |
+| / | Search for file in file explorer |
+| S | Search for file in file explorer 2 |
+| a | Create file or directory |
+| r | Rename |
+| d | Delete |
+| x | Cut |
+| g? | Show all the keymapping for the file explorer |
 
 ## Text manipulation
 | Keybinding | Description |

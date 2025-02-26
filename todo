@@ -1,9 +1,5 @@
 - List all the dependencies and setting up an installer
 
-- Fix error opening lua files
-
 - Add code navigation (definition, declaration, reference, implementation)
 
 - Fix include error
-
-- Add a new file explorer

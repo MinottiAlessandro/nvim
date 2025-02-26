@@ -14,24 +14,15 @@ local config = function()
 
 	-- lua
 	lspconfig.lua_ls.setup({
-		capabilities = capabilities,
-		on_attach = on_attach,
-		settings = { -- custom settings for lua
-			Lua = {
-				-- make the language server recognize "vim" global
-				diagnostics = {
-					globals = { "vim" },
-				},
-				workspace = {
-					-- make language server aware of runtime files
-					library = {
-						[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-						[vim.fn.stdpath("config") .. "/lua"] = true,
-					},
-				},
-			},
-		},
-	})
+        settings = {
+            Lua = {
+                runtime = { version = 'LuaJIT' },
+                diagnostics = { globals = { 'vim' } },
+                workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+                telemetry = { enable = false },
+            },
+        },
+    })
 
 	-- json
 	lspconfig.jsonls.setup({
