@@ -1,5 +1,7 @@
-List all the dependencies and setting up an installer
+- List all the dependencies and setting up an installer
 
-Check if there is some available optimization in plugin loading
+- Fix error opening lua files
 
-Fix error opening lua files
+- Add code navigation (definition, declaration, reference, implementation)
+
+- Fix include error

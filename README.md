@@ -21,6 +21,11 @@
 | \<leader\>l | Open Lazy |
 | \<leader\>m | Open Mason |
 
+## Code navigation
+| Keybinding | Description |
+| ---------- | ----------- |
+| K | Show documentation for whats under the cursor |
+
 ## Text manipulation
 | Keybinding | Description |
 | ---------- | ----------- |
