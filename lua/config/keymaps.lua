@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true, desc = 'Open file explorer'})
-vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeFocus<CR>', { noremap = true, silent = true, desc = 'Open file explorer'})
 vim.keymap.set('v', '<', '<gv', {desc = 'Indent left'})
 vim.keymap.set('v', '>', '>gv', {desc = 'Indent right'})
 vim.api.nvim_set_keymap('n', '<leader>o', ':vsp | enew<CR>', { noremap = true, silent = true, desc = 'Split screen w new buffer' })
@@ -9,6 +9,16 @@ vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, {desc = 'Open UndoTree'
 vim.api.nvim_set_keymap('n', '<leader>t', [[:%s/\s\+$//e<CR>:noh<CR>]], {desc = 'Trail spaces'})
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', {desc = 'Open Lazy'})
 vim.keymap.set('n', '<leader>m', ':Mason<CR>', {desc = 'Open Mason'})
+
+-- Jump to definition
+vim.api.nvim_set_keymap('n', '<leader>jd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true, desc='Jump to definition'})
+-- Jump to implementation
+vim.api.nvim_set_keymap('n', '<leader>ji', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap = true, silent = true, desc='Jump to implementation' })
+-- Jump references
+vim.api.nvim_set_keymap('n', '<leader>jr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true, desc='Jump to references' })
+
+vim.api.nvim_set_keymap('n', '<leader>jb', '<C-o>', { noremap = true, desc='Jump back' }) -- Back
+vim.api.nvim_set_keymap('n', '<leader>jf', '<C-i>', { noremap = true, desc='Jump forward' }) -- Forward
 
 -- tmux --
 vim.api.nvim_set_keymap('n', '<C-h>', '<cmd> TmuxNavigateLeft<CR>', { noremap = true, silent = true, desc = 'Navigate left' })

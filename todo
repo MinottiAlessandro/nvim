@@ -3,3 +3,7 @@
 - Add code navigation (definition, declaration, reference, implementation)
 
 - Fix include error
+
+- Telescope browse keybinding sucks
+
+- fix Jumps*, none are working properly 
