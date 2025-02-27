@@ -12,6 +12,10 @@ return {
 
   ---@module 'blink.cmp'
   opts = {
+    completion = {
+        documentation = { auto_show = true, auto_show_delay_ms = 500 },
+        ghost_text = { enabled = true },
+    },
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept, C-n/C-p for up/down)
     -- 'super-tab' for mappings similar to vscode (tab to accept, arrow keys for up/down)
     -- 'enter' for mappings similar to 'super-tab' but with 'enter' to accept
