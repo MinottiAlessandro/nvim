@@ -25,7 +25,7 @@
 | Keybinding | Description |
 | ---------- | ----------- |
 | K | Show documentation for whats under the cursor |
-| \<C-y\> | Accept selected code suggestion |
+| \<TAB\> | Accept selected code suggestion |
 
 ## File explorer
 | Keybinding | Description |
