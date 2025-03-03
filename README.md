@@ -26,6 +26,8 @@
 | ---------- | ----------- |
 | K | Show documentation for whats under the cursor |
 | \<TAB\> | Accept selected code suggestion |
+| m\<char\> | Specify a char to set a mark in the code |
+| '\<char\> | To jump to the specific mark |
 
 ## File explorer
 | Keybinding | Description |
@@ -51,6 +53,6 @@
 | Keybinding | Description |
 | ---------- | ----------- |
 | \<leader\>o | Open a new empty buffer |
-| ' | Enlarge pane |
-| " | Restrict pane |
+| ' | Enlarge pane | ---> keybinding not mapped at the moment
+| " | Restrict pane | ---> keybinding not mapped at the moment
 | ctrl h,j,k,l | move the focus on another pane |

@@ -25,6 +25,7 @@ return {
         vim.keymap.set("n", "<leader><leader>", ":Telescope live_grep<CR>", {desc = "Search text globally"}),
         vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {desc = "Find file"}),
         vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", {desc = "Find buffer"}),
-        vim.keymap.set('n', '<leader>fk', '<cmd>Telescope keymaps<cr>', { desc = 'Search Keymaps' }),
+        vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Search Keymaps" }),
+        vim.keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Search marks" }),
     },
 }
