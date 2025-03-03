@@ -7,3 +7,6 @@
 - Telescope browse keybinding sucks
 
 - fix Jumps*, none are working properly 
+
+- TAB does not tab anymore, it's used to accept code suggestions, fix this 
+
