@@ -11,6 +11,8 @@
 | \<leader\>\<leader\> | Perform a global search |
 | \<leader\>ff | Search a file with the specified name |
 | \<leader\>fb | Search and open any active buffers |
+| \<leader\>fm | Find all marks |
+| \<leader\>M | Delete all marks |
 | \<leader\>e | Open folder manager |
 | \<leader\>u | Open undotree |
 | ctrl e | Open Harpoon UI |

@@ -9,6 +9,10 @@ vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, {desc = 'Open UndoTree'
 vim.api.nvim_set_keymap('n', '<leader>t', [[:%s/\s\+$//e<CR>:noh<CR>]], {desc = 'Trail spaces'})
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', {desc = 'Open Lazy'})
 vim.keymap.set('n', '<leader>m', ':Mason<CR>', {desc = 'Open Mason'})
+vim.keymap.set('n', '<leader>M', function()
+  vim.cmd('delmarks! | delmarks A-Z | delmarks 0-9')
+  vim.notify('All marks cleared!', vim.log.levels.INFO)
+end, { noremap = true, silent = true })
 
 -- Jump to definition
 vim.api.nvim_set_keymap('n', '<leader>jd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true, desc='Jump to definition'})
