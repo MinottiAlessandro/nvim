@@ -27,7 +27,7 @@ return {
     --
     -- See the full "keymap" documentation for information on defining your own keymap.
     keymap = {
-        ['<Tab>'] = { 'select_and_accept' },
+        ['<Tab>'] = { 'select_and_accept', 'fallback' },
     },
 
     appearance = {
