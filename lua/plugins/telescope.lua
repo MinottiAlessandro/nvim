@@ -27,5 +27,6 @@ return {
         vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", {desc = "Find buffer"}),
         vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Search Keymaps" }),
         vim.keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Search marks" }),
+        vim.keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter<cr>", { desc = "Search symbols" }),
     },
 }

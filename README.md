@@ -12,6 +12,7 @@
 | \<leader\>ff | Search a file with the specified name |
 | \<leader\>fb | Search and open any active buffers |
 | \<leader\>fm | Find all marks |
+| \<leader\>ft | Find all symbols |
 | \<leader\>M | Delete all marks |
 | \<leader\>e | Open folder manager |
 | \<leader\>u | Open undotree |
