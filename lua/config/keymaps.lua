@@ -22,6 +22,25 @@ vim.api.nvim_set_keymap('n', '<leader>ji', '<cmd>lua vim.lsp.buf.implementation(
 vim.api.nvim_set_keymap('n', '<leader>jr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true, desc='Jump to references' })
 -- Jump to the latest cursor position
 vim.keymap.set('n', '<leader>jl', '<C-o>', { desc = 'Jump to previous position in jumplist' })
+-- Jump to the beginning of the function
+vim.keymap.set('n', '<leader>jf', function()
+  local ts_utils = require('nvim-treesitter.ts_utils')
+  local node = ts_utils.get_node_at_cursor()
+
+  -- Traverse up the tree to find the function definition
+  while node and node:type() ~= 'function_definition' and
+         node:type() ~= 'method_definition' and
+         node:type() ~= 'function_declaration' do
+    node = node:parent()
+  end
+
+  if node then
+    local start_row, start_col, _, _ = node:range()
+    vim.api.nvim_win_set_cursor(0, {start_row + 1, start_col})
+  else
+    vim.notify('No surrounding function found', vim.log.levels.INFO)
+  end
+end, { desc = 'Jump to beginning of current function (Treesitter)' })
 
 vim.api.nvim_set_keymap('n', '<leader>jb', '<C-o>', { noremap = true, desc='Jump back' }) -- Back
 vim.api.nvim_set_keymap('n', '<leader>jf', '<C-i>', { noremap = true, desc='Jump forward' }) -- Forward
