@@ -33,7 +33,7 @@
 | m\<char\> | Specify a char to set a mark in the code |
 | '\<char\> | To jump to the specific mark |
 | \<space\>jl | Jump to the latest cursior position |
-| \<space\>jf | Jump to function definition |
+| \<space\>ju | Jump to function definition |
 
 ## File explorer
 | Keybinding | Description |
