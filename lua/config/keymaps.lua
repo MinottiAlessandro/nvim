@@ -20,6 +20,8 @@ vim.api.nvim_set_keymap('n', '<leader>jd', '<cmd>lua vim.lsp.buf.definition()<CR
 vim.api.nvim_set_keymap('n', '<leader>ji', '<cmd>lua vim.lsp.buf.implementation()<CR>', { noremap = true, silent = true, desc='Jump to implementation' })
 -- Jump references
 vim.api.nvim_set_keymap('n', '<leader>jr', '<cmd>lua vim.lsp.buf.references()<CR>', { noremap = true, silent = true, desc='Jump to references' })
+-- Jump to the latest cursor position
+vim.keymap.set('n', '<leader>jl', '<C-o>', { desc = 'Jump to previous position in jumplist' })
 
 vim.api.nvim_set_keymap('n', '<leader>jb', '<C-o>', { noremap = true, desc='Jump back' }) -- Back
 vim.api.nvim_set_keymap('n', '<leader>jf', '<C-i>', { noremap = true, desc='Jump forward' }) -- Forward

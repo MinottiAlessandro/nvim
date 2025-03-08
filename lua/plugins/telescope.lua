@@ -28,5 +28,7 @@ return {
         vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Search Keymaps" }),
         vim.keymap.set("n", "<leader>fm", "<cmd>Telescope marks<cr>", { desc = "Search marks" }),
         vim.keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter<cr>", { desc = "Search symbols" }),
+        vim.keymap.set("n", "<leader>fj", "<cmd>Telescope jumplist<cr>", { desc = "Search jumplist" }),
+        vim.keymap.set('n', '<leader>jl', '<C-o>', { desc = 'Jump to previous position in jumplist' }),
     },
 }

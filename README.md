@@ -13,6 +13,7 @@
 | \<leader\>fb | Search and open any active buffers |
 | \<leader\>fm | Find all marks |
 | \<leader\>ft | Find all symbols |
+| \<leader\>fj | Find all jump positions |
 | \<leader\>M | Delete all marks |
 | \<leader\>e | Open folder manager |
 | \<leader\>u | Open undotree |
@@ -31,6 +32,7 @@
 | \<TAB\> | Accept selected code suggestion |
 | m\<char\> | Specify a char to set a mark in the code |
 | '\<char\> | To jump to the specific mark |
+| \<space\>jl | Jump to the latest cursior position |
 
 ## File explorer
 | Keybinding | Description |
