@@ -4,7 +4,7 @@ local diagnostic_signs = require("utils.icons").diagnostic_signs
 local config = function()
 	require("neoconf").setup({})
     -- local cmp_nvim_lsp = require("cmp_nvim_lsp")
-	local lspconfig = require("lspconfig")
+	-- local lspconfig = require("lspconfig")
 	-- local capabilities = cmp_nvim_lsp.default_capabilities()
 	local capabilities = require('blink.cmp').get_lsp_capabilities()
 
@@ -14,7 +14,7 @@ local config = function()
 	end
 
 	-- lua
-	lspconfig.lua_ls.setup({
+	vim.lsp.config("lua_ls", {
         settings = {
             Lua = {
                 runtime = { version = 'LuaJIT' },
@@ -26,14 +26,14 @@ local config = function()
     })
 
 	-- json
-	lspconfig.jsonls.setup({
+	vim.lsp.config("jsonls", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		filetypes = { "json", "jsonc" },
 	})
 
 	-- python
-	lspconfig.pyright.setup({
+	vim.lsp.config("pyright", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		settings = {
@@ -50,7 +50,7 @@ local config = function()
 	})
 
 	-- typescript
-	lspconfig.ts_ls.setup({
+	vim.lsp.config("ts_ls", {
 		on_attach = on_attach,
 		capabilities = capabilities,
 		filetypes = {
@@ -59,25 +59,24 @@ local config = function()
 			"typescriptreact",
 			"javascriptreact",
 		},
-		root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", ".git"),
 	})
 
 	-- bash
-	lspconfig.bashls.setup({
+	vim.lsp.config("bashls", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		filetypes = { "sh", "aliasrc" },
 	})
 
 	-- solidity
-	lspconfig.solidity.setup({
+	vim.lsp.config("solidity", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		filetypes = { "solidity" },
 	})
 
 	-- typescriptreact, javascriptreact, css, sass, scss, less, svelte, vue
-	lspconfig.emmet_ls.setup({
+	vim.lsp.config("emmet_ls", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		filetypes = {
@@ -95,13 +94,13 @@ local config = function()
 	})
 
 	-- docker
-	lspconfig.dockerls.setup({
+	vim.lsp.config("dockerls", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 	})
 
 	-- C/C++
-	lspconfig.clangd.setup({
+	vim.lsp.config("clangd", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		cmd = {
@@ -111,7 +110,7 @@ local config = function()
 	})
 
     -- go
-	lspconfig.gopls.setup({
+	vim.lsp.config("gopls", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		settings = {
@@ -128,7 +127,7 @@ local config = function()
 	})
 
     -- rust
-	lspconfig.rust_analyzer.setup({
+	vim.lsp.config("rust_analyzer", {
 		capabilities = capabilities,
 		on_attach = on_attach,
 		settings = {
@@ -161,7 +160,7 @@ local config = function()
 	local clangformat = require("efmls-configs.formatters.clang_format")
 
     -- configure efm server
-    lspconfig.efm.setup({
+    vim.lsp.config("efm", {
         filetypes = {
             "lua",
             "python",
